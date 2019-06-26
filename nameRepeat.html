@@ -1,0 +1,37 @@
+<!---------------------------------------------------------------------------------------------------------------------------------------
+Sergio Gonzalez
+
+nameRepeat.html
+10/27/18
+
+Create an html file called nameRepeat.html. Use one prompt() to ask for the user's name, and another to ask for a delay in seconds 
+(not milliseconds). Then, write the name to the document repeatedly based on that input.
+
+---------------------------------------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>nameRepeat</title>
+	</head>	
+	<body>
+		<h1>nameRepeat</h1>
+		<script>
+			//get variables from user
+			var name = prompt("Please enter your name: ", "");
+			var seconds = prompt("Please enter an amount of seconds: ", "");
+			
+			//setINterval to call function and set timer user entered
+			setInterval("printName(name)", (seconds * 1000));
+			
+			//function to printname
+			function printName(name)
+			{
+				document.write(name + "<br />");
+			
+			}
+				
+		</script>
+	</body>
+</html>
